@@ -1,4 +1,4 @@
-# Legion_Of_Law
+![Screenshot (909)](https://github.com/user-attachments/assets/c4bfe213-23a1-44d8-be74-beb85534c93e)![Screenshot (909)](https://github.com/user-attachments/assets/2713a71b-f421-4038-9f01-bba9bed70ac0)# Legion_Of_Law
 
 Project Description
 
@@ -14,3 +14,6 @@ Features
 
 •	Profile Management: Both users and lawyers can create and manage their profiles to enhance visibility and accessibility.
 
+
+
+![Screenshot (909)](https://github.com/user-attachments/assets/c630603b-e9a7-4185-9a64-bfe8fcdc7f1f)

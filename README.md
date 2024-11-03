@@ -1,4 +1,3 @@
-![Screenshot (909)](https://github.com/user-attachments/assets/c4bfe213-23a1-44d8-be74-beb85534c93e)![Screenshot (909)](https://github.com/user-attachments/assets/2713a71b-f421-4038-9f01-bba9bed70ac0)# Legion_Of_Law
 
 Project Description
 

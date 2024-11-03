@@ -1,5 +1,4 @@
 # Legion_Of_Law
-Legion Of Law
 
 Project Description
 

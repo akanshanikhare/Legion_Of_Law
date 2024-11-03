@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Candara', sans-serif;
+}
+
+body{
+    /* background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+
+    Modern-Login-master/backgroun3.jpg
+
+  ', sans-serif  
+    */
+    flex-direction: column;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-position: center;
+	opacity: 0.9;
+	/* background: linear-gradient(43deg, #4158D0 0%,#C850C0 46%,#FFCC70 100%); */
+	background: url("pxfuel.jpg") top center;
+
+	background-size:cover;
+
+
+}
+
+.container{
+    background-color: #fffffff8;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 950px;
+    /* max-width: 100%; 
+    768  480
+    */
+    max-width: 100%;
+    min-height: 580px;
+}
+
+.column {
+    display: flex;
+    column-gap: 25px;
+    box-sizing: border-box;
+    margin: 1px ;
+  }
+
+.container p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span{
+    font-size: 14px;
+}
+
+.container a{
+    color: #333;
+   
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+
+
+
+
+
+.container button{
+    background-color: hsl(0, 1%, 21%);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input{
+    background-color: #eee;
+    border: gray;
+    margin: 8px 0 ;
+    padding: 15px 22px;
+    font-size: 14px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.active .sign-in{
+    transform: translateX(100%);
+}
+
+.sign-up{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.active .sign-up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.social-icons{
+    margin: 20px 0;
+}
+
+.social-icons a{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.toggle-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 120px 0 0 100px;
+    /*15-br*/
+    z-index: 1000;
+}
+
+.container.active .toggle-container{
+    transform: translateX(-100%);
+    border-radius: 0 120px 100px 0;
+}
+
+.toggle{
+    background-color: #4f4c49da;
+    height: 100%;
+    background: linear-gradient(to right, hwb(0 32% 67%), hsl(40, 4%, 29%));
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container.active .toggle{
+    transform: translateX(50%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left{
+    transform: translateX(-200%);
+}
+
+.container.active .toggle-left{
+    transform: translateX(0);
+}
+
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.active .toggle-right{
+    transform: translateX(200%);
+}
+
+
+
+
+.file-upload-wrapper{
+    position:relative;
+    width:100%;
+    height:60px;
+    cursor: pointer;
+  }
+  .file-upload-wrapper::after{
+    content:attr(data-text);
+    font-size: 14px;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#ececec;
+    padding:10px 15px;
+    display: block;
+    width:calc(100% - 40px);
+    pointer-events:none;
+    z-index: 20;
+    height:30px;  /*HHIGHT UPLOB*/
+    line-height: 30px;
+    color:#313131ce;
+    border-radius: 5px 10px 10px 5px;
+    font-weight: 355;
+  }
+  .file-upload-wrapper::before{
+    content:"Upload";
+    position:absolute;
+    top:0;
+    right:0;
+    display: inline-block;
+    height:50px;
+    background: -webkit-linear-gradient(to right, #1b1c1c, #2d2d2f);
+    background: linear-gradient(to right, #8e8d89, #5a575c);
+    color:#fff;
+    font-weight: 700;
+    z-index: 25;
+    font-size: 16px;
+    line-height: 50px;
+    padding:0 15px;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 0 5px 5px 0;
+    transition: 0.5s ease-in-out;
+  }
+  .file-upload-wrapper:hover::before{
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
+    background: linear-gradient(to right, #5a575c , #8e8d89);
+  }
+  .file-upload-wrapper input{
+    opacity: 0;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 99;
+    height:40px;
+    margin:0;
+    padding:0;
+    display:block;
+    cursor: pointer;
+    width:100%;
+  }
+  

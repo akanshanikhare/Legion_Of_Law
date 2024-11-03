@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Lawyer registration and login</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Lawyer Sign In</h1>
+               
+                
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        
+        
+        
+        <div class="form-container sign-in">
+            <form>
+                <h1>Lawyer Registration</h1>
+                
+                <input type="text" placeholder="Enter full name">
+                <input type="text" placeholder="Phone Number">
+                
+                <div class="column">  
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                  </div> 
+                  
+                <input type="text" placeholder="Aadhaar Number">
+                
+                <div class="column">  
+                    <input type="text" placeholder="state">
+                    <input type="text" placeholder="City">
+                  </div> 
+
+                <div class="column">  
+                  <input type="text" placeholder="Bar council ID">
+                  <input type="text" placeholder="ID no.">
+                </div> 
+                <div class="file-upload-wrapper" data-text="Upload a Copy of Your License">
+                  <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                </div>
+                <button>Register</button>
+            </form>
+        </div>
+      
+      
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your credentials to access all site features designed exclusively for lawyers. If you haven't registered yet, please register to join our legal community.</p>
+                    <button class="hidden" id="login">Register</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h2>Hello, Respected Legal Professionals!</h2>
+                    <p>Register with your professional information to access all site features designed exclusively for lawyers. If you have already registered, click below to sign in.</p>
+                    <button class="hidden" id="register">Sign In </button>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+

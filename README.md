@@ -1,3 +1,4 @@
+Legion Of Law
 
 Project Description
 
@@ -12,6 +13,7 @@ Features
 •	Client Management: Lawyers can manage their client interactions and requirements efficiently.
 
 •	Profile Management: Both users and lawyers can create and manage their profiles to enhance visibility and accessibility.
+
 
 
 

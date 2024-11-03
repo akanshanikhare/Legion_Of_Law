@@ -6,7 +6,10 @@ Legion Of Law is a law-based website designed to connect users with lawyers. It 
 
 Features
 •	User Lawyer Search: Users can easily search for lawyers based on practice area, location, and ratings.
+
 •	Consultation Booking: Users can book consultations with lawyers for personalized advice.
+
 •	Client Management: Lawyers can manage their client interactions and requirements efficiently.
+
 •	Profile Management: Both users and lawyers can create and manage their profiles to enhance visibility and accessibility.
 
